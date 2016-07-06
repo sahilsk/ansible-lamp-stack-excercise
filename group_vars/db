@@ -1,0 +1,18 @@
+mysql_root_password: root
+mysql_databases:
+  - name: wp_db1 
+    encoding: latin1
+    collation: latin1_general_ci
+  - name: wp_db2 
+    encoding: latin1
+    collation: latin1_general_ci
+
+mysql_users:
+  - name: wp_user1 
+    host: "%"
+    password: wp_pass1
+    priv: "wp_db1.*:ALL"
+  - name: wp_user2 
+    host: "%"
+    password: wp_pass2
+    priv: "wp_db2.*:ALL"

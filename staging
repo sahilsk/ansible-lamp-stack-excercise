@@ -1,0 +1,9 @@
+[app]
+web01  ansible_ssh_host=139.59.1.161  ansible_ssh_port=22 ansible_ssh_pass="Jifflen0w!"  ansible_user=root
+web02  ansible_ssh_host=139.59.1.161  ansible_ssh_port=22 ansible_ssh_pass="Jifflen0w!"  ansible_user=root
+
+[db]
+db01  ansible_ssh_host=139.59.1.161  ansible_ssh_port=22 ansible_ssh_pass="Jifflen0w!"  ansible_user=root
+
+[proxy]
+proxy01 ansible_ssh_host=139.59.1.161  ansible_ssh_port=22 ansible_ssh_pass="Jifflen0w!"  ansible_user=root
