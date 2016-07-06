@@ -41,14 +41,3 @@
     wp_install_dir: /var/sites/awesome_wordpress_site01
     wp_version: 4.0
 
-#- hosts: web02
-#  roles: 
-#    - wordpress
-#  vars: 
-#    wp_db_host: localhost
-#    wp_db_name: wp_db2
-#    wp_db_password: wb_pass2
-#    wp_db_user: wp_user2
-#    wp_install_dir: /var/sites/awesome_wordpress_site02
-#    wp_version: 4.0
-#
