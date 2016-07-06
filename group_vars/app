@@ -9,6 +9,8 @@ wp_fs_method: 'direct'
 wp_lang: ''
 
 
+
+php_enable_php_fpm: true 
 php_packages:
   - php
   - php-cli
@@ -19,4 +21,5 @@ php_packages:
   - php-pdo
   - php-pecl-apc
   - php-xml
-
+  - php-fpm 
+  - php-mysql

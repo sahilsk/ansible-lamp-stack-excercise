@@ -1,4 +1,8 @@
 
+upstream backend {
+    server 127.0.0.1:8005;
+    server 127.0.0.1:8006;
+}
 server {
         listen 80 default_server;
 
@@ -26,8 +30,7 @@ server {
         location ~ \.php$ {
                 try_files $uri =404;
                 fastcgi_split_path_info ^(.+\.php)(/.+)$;
-                #fastcgi_pass unix:/var/run/php5-fpm.sock;
-                fastcgi_pass 127.0.0.1:8005;
+                fastcgi_pass backend; 
                 fastcgi_index index.php;
                 include fastcgi_params;
         }
