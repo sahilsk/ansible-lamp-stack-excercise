@@ -11,7 +11,7 @@
 - name: Wordpresss | Move extracted directory to {{wp_install_dir}}
   command: /bin/mv /tmp/wordpress {{wp_install_dir}} creates={{wp_install_dir}}
 
-- name: Wordpresss | Remove wordpress-{{wp_version}}.tar.gz
+#- name: Wordpresss | Remove wordpress-{{wp_version}}.tar.gz
 #  file: path=/tmp/wordpress-{{wp_version}}.tar.gz state=absent
 
 - name: Wordpresss | Fetch random salts for wp-config.php
